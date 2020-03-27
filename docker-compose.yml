@@ -10,7 +10,7 @@ services:
       - MARIADB_ROOT_USER=root
       - MARIADB_ROOT_PASSWORD=xxxx
     volumes:
-      - mariadb-data:/bitnami
+      - ./mariadb-data:/bitnami
   moodle:
     image: 'bitnami/moodle:3'
     environment:
