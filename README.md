@@ -21,6 +21,12 @@ https://github.com/bitnami/bitnami-docker-moodle/issues/69
 
 First change all passwords in docker-compose file (it is 'xxxx' -> to any password)
 
+Create directory for mariadb `mkdir mariadb-data && sudo chmod o+w mariadb-data`
+
+Make sure your account is owner NOT root!
+
+Run docker-compose up
+
 ### Adminer
 Adminer is accesible on port 8080
 
