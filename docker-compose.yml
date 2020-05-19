@@ -5,23 +5,23 @@ services:
     environment:
       - MARIADB_USER=bn_moodle
       - MARIADB_DATABASE=bitnami_moodle
-      - MARIADB_PASSWORD=xxxx
+      - MARIADB_PASSWORD=zaq12wsx
       - ALLOW_EMPTY_PASSWORD=no
       - MARIADB_ROOT_USER=root
-      - MARIADB_ROOT_PASSWORD=xxxx
+      - MARIADB_ROOT_PASSWORD=zaq12wsx
     volumes:
       - ./mariadb-data:/bitnami
   moodle:
     image: 'bitnami/moodle:3'
     environment:
       - MOODLE_USERNAME=admin
-      - MOODLE_PASSWORD=xxxx
+      - MOODLE_PASSWORD=zaq12wsx
       - MOODLE_EMAIL=admin@empty.com
       - MARIADB_HOST=mariadb
       - MARIADB_PORT_NUMBER=3306
       - MOODLE_DATABASE_USER=bn_moodle
       - MOODLE_DATABASE_NAME=bitnami_moodle
-      - MOODLE_DATABASE_PASSWORD=xxxx
+      - MOODLE_DATABASE_PASSWORD=zaq12wsx
       - ALLOW_EMPTY_PASSWORD=no
     ports:
       - '80:80'
